@@ -64,7 +64,7 @@ AIC-Archive/
 | **AIC-Archive** | Curated decision and design *rationale* log |
 | **AIC-Legal / AIC-Policy-Tools** | Policy orientation; Archive may *point to* decisions, not replace counsel |
 | **AIC-Formal / TestNet / Interop** | Technical artifacts; Archive records *why* a direction was chosen |
-| **MyVision / Start-Here** | Narrative orientation; Archive is the dated decision trail |
+| **MyVision / Beginners** | Narrative orientation; Archive is the dated decision trail |
 
 ## Principles observed
 
