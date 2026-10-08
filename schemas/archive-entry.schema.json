@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://adaptiveintelligencecircle.example/schemas/archive-entry.schema.json",
+  "title": "AIC Archive Entry metadata (optional front matter)",
+  "description": "Optional YAML front-matter shape. Pre-Covenant. Under-claim.",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "date": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+    "status": {
+      "type": "string",
+      "enum": ["active", "superseded", "draft"]
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "related": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "supersedes": {
+      "type": ["string", "null"]
+    }
+  },
+  "required": ["id", "date", "status"],
+  "additionalProperties": true
+}
